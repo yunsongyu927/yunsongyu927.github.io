@@ -1,4 +1,3 @@
-# Yunsong Yu
 Hi, welcome to my personal website!
 ## About Me
 I am a 3rd year PhD student at WashU Olin Business School.
