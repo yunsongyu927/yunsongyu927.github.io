@@ -1,1 +1,2 @@
-theme: jekyll-theme-cayman
+# This site is a fully custom static index.html (no Jekyll theme).
+# See .nojekyll — GitHub Pages serves the files as-is.
