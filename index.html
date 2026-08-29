@@ -7,7 +7,7 @@
 <meta name="description" content="Yunsong Yu — PhD student at Washington University in St. Louis, Olin Business School.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
 <style>
   :root{
     --coral: #2f6fa8;
@@ -30,7 +30,9 @@
 
   body{
     margin: 0;
-    background: linear-gradient(180deg, var(--cream) 0%, var(--cream-2) 100%);
+    background:
+      linear-gradient(180deg, rgba(243, 248, 252, 0.82) 0%, rgba(232, 241, 248, 0.9) 100%),
+      url('assets/hero-bg.jpg') center / cover no-repeat fixed;
     color: var(--ink);
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     line-height: 1.65;
@@ -58,7 +60,7 @@
     top: 0;
     z-index: 50;
     backdrop-filter: blur(8px);
-    background: rgba(253, 246, 240, 0.85);
+    background: rgba(243, 248, 252, 0.85);
     border-bottom: 1px solid var(--line);
   }
   nav .wrap{
@@ -100,16 +102,13 @@
 
   /* Hero */
   header.hero{
-    padding: 0;
-    aspect-ratio: 4096 / 2144;
+    padding: 90px 0;
     min-height: 320px;
     display: flex;
     align-items: center;
     position: relative;
     overflow: hidden;
-    background:
-      linear-gradient(180deg, rgba(243, 248, 252, 0.32) 0%, rgba(232, 241, 248, 0.48) 100%),
-      url('assets/hero-bg.jpg') center / cover no-repeat;
+    background: transparent;
   }
   header.hero .wrap{
     width: 100%;
@@ -142,10 +141,12 @@
     text-shadow: 0 2px 16px rgba(255, 255, 255, 0.65);
   }
   .cn-name{
-    font-weight: 500;
-    color: var(--ink-soft);
-    font-size: 0.75em;
-    margin-left: 4px;
+    font-family: 'Ma Shan Zheng', cursive;
+    font-weight: 400;
+    color: var(--coral-dark);
+    font-size: 0.85em;
+    margin-left: 10px;
+    letter-spacing: 1px;
   }
 
   /* Sections */
@@ -265,6 +266,7 @@
     padding: 32px 0 48px;
     color: var(--ink-soft);
     font-size: 0.85rem;
+    text-shadow: 0 1px 8px rgba(255, 255, 255, 0.8);
   }
 
   @media (max-width: 640px){
