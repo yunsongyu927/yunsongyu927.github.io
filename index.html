@@ -100,20 +100,12 @@
 
   /* Hero */
   header.hero{
-    padding: 72px 0 56px;
+    padding: 90px 0 70px;
     position: relative;
     overflow: hidden;
-  }
-  header.hero::before{
-    content: "";
-    position: absolute;
-    top: -120px;
-    right: -120px;
-    width: 340px;
-    height: 340px;
-    background: radial-gradient(circle, var(--peach) 0%, rgba(255,178,107,0) 70%);
-    opacity: 0.55;
-    z-index: 0;
+    background:
+      linear-gradient(180deg, rgba(243, 248, 252, 0.86) 0%, rgba(232, 241, 248, 0.93) 100%),
+      url('assets/hero-bg.jpg') center 65% / cover no-repeat;
   }
   header.hero .wrap{
     position: relative;
