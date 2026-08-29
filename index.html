@@ -100,15 +100,16 @@
 
   /* Hero */
   header.hero{
-    padding: 90px 0 70px;
-    min-height: 380px;
+    padding: 0;
+    aspect-ratio: 4096 / 2144;
+    min-height: 320px;
     display: flex;
     align-items: center;
     position: relative;
     overflow: hidden;
     background:
       linear-gradient(180deg, rgba(243, 248, 252, 0.32) 0%, rgba(232, 241, 248, 0.48) 100%),
-      url('assets/hero-bg.jpg') center / contain no-repeat;
+      url('assets/hero-bg.jpg') center / cover no-repeat;
   }
   header.hero .wrap{
     width: 100%;
@@ -137,13 +138,14 @@
   }
   .hero-text h1{
     font-size: clamp(2.1rem, 5vw, 2.9rem);
-    margin: 0 0 8px;
+    margin: 0;
+    text-shadow: 0 2px 16px rgba(255, 255, 255, 0.65);
   }
-  .hero-tagline{
-    font-size: 1.15rem;
+  .cn-name{
+    font-weight: 500;
     color: var(--ink-soft);
-    margin: 0 0 18px;
-    max-width: 46ch;
+    font-size: 0.75em;
+    margin-left: 4px;
   }
 
   /* Sections */
@@ -297,8 +299,7 @@
   <div class="wrap">
     <div class="avatar">YY</div>
     <div class="hero-text">
-      <h1>Yunsong Yu</h1>
-      <p class="hero-tagline">3rd-year PhD student at Washington University in St. Louis, Olin Business School.</p>
+      <h1>Yunsong Yu <span class="cn-name">于云嵩</span></h1>
     </div>
   </div>
 </header>
