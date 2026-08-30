@@ -217,6 +217,29 @@
     box-shadow: 0 12px 26px rgba(31, 78, 117, 0.35);
   }
 
+  /* Personal */
+  .personal-intro{
+    max-width: 720px;
+    font-size: 1.02rem;
+  }
+  .personal-grid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 24px;
+  }
+  .personal-card{
+    padding: 22px;
+    background: var(--cream);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+  }
+  .personal-card h3{
+    margin: 0 0 8px;
+    font-size: 1.05rem;
+  }
+  .personal-card p{ margin: 0; }
+
   /* Contact */
   .contact-grid{
     display: grid;
@@ -271,6 +294,7 @@
     }
     section .section-inner{ padding: 28px 22px; }
     .cv-box{ flex-direction: column; align-items: flex-start; }
+    .personal-grid{ grid-template-columns: 1fr; }
     nav .wrap{ flex-direction: column; gap: 10px; }
     nav ul{ justify-content: center; }
   }
@@ -287,6 +311,7 @@
       <!-- <li><a class="nav-link" href="#research">Research</a></li> -->
       <li><a class="nav-link" href="#teaching">Teaching</a></li>
       <li><a class="nav-link" href="#cv">CV</a></li>
+      <li><a class="nav-link" href="#personal">Personal</a></li>
       <li><a class="nav-link" href="#contact">Contact</a></li>
     </ul>
   </div>
@@ -400,6 +425,26 @@
         <p style="margin:0;">Download my full CV for details on education, research, and teaching.</p>
       </div>
       <a class="btn" href="assets/Yunsong_Yu_CV.pdf" download>&#8681; Download CV</a>
+    </div>
+  </div>
+</section>
+
+<section id="personal">
+  <div class="wrap">
+    <div class="section-inner">
+      <h2>Personal</h2>
+      <p class="personal-intro">There is more to a life than what fits on a CV. My journey—from studying financial engineering in Shenzhen, to public policy and research in Chicago, and now finance in St. Louis—has taught me to stay curious, embrace unfamiliar places, and keep learning from the people around me.</p>
+
+      <div class="personal-grid">
+        <div class="personal-card">
+          <h3>Beyond Research</h3>
+          <p>Outside academic work, I enjoy making time for the people, places, and everyday experiences that bring a wider perspective to life.</p>
+        </div>
+        <div class="personal-card">
+          <h3>What I Value</h3>
+          <p>I value curiosity, kindness, and steady growth—and I try to carry them into both my work and the way I connect with others.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>

@@ -5,6 +5,7 @@ A fully custom single-page site (plain HTML + CSS, no Jekyll theme). GitHub Page
 ### To customize
 - **Research / Teaching**: edit the placeholder text in `index.html` (search for `[Placeholder` / `placeholder` text).
 - **CV**: put your CV PDF at `assets/Yunsong_Yu_CV.pdf` (the "Download CV" button already links here).
+- **Personal**: update the journey, interests, and values in the `#personal` section of `index.html`.
 - **LinkedIn / Google Scholar**: replace the placeholder URLs in the `#contact` section of `index.html` with your actual profile links.
 
 ### Local preview
